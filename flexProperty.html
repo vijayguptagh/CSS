@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="" id="did1">
+        <div id="did2" class="c2"style="background: green;width: 100px;height: 100px;border:2px solid black">b1</div>
+        <div id="did3" class="c2"style="background: blue;width: 100px;height: 100px;border:2px solid black">b2</div>
+        <div id="did4" class="c2"style="background: red;width: 100px;height: 100px;border:2px solid black">b3</div>
+        <div id="did5" class="c2"style="background: violet;width: 100px;height: 100px;border:2px solid black">b4</div>
+        <div id="did6" class="c2"style="background: brown;width: 100px;height: 100px;border:2px solid black">b5</div>
+        <div id="did7" class="c2"style="background: yellow;width: 100px;height: 100px;border:2px solid black">b6</div>
+    </div>
+    <style>
+
+        #did1{
+            width: 100vw;height: 100vh;background: #a8bac1;
+            display: flex;/*intialising flex*/
+            flex-direction: row;/*use row,row-reverse,column,column-reverse*/
+
+        /*parent properties*/
+            flex-wrap: wrap;/*wrap property is used for responsivness-changing position of elements when window is minimised,maximised */
+            /*make direction-row, wrap-wrap for further properties.*/
+            justify-content: flex-end;/*moves elements to center in x direction*/
+            align-items:center ; /*moves elements to center in y direction*/
+            /* Values = center, flex-start, flex-end*/
+            /* justify-x-flex-start means from left side in x direction */
+            /* align-item-y-flex-start means from top side in y direction */
+            /*in case when flex direction is reverse for row/column then rules are opprosite case here. 
+            for exa flex direction=row reverse ==> x
+            in this case justify-flex start means from right side in x direction ==is opposite case
+            and in y dire align remains as it */
+        }
+
+        #did3{/*b2*/
+            /*order: 2;/*default value for all box is 0.Boxes are arranged in increasing order. */ 
+            /*b3-order=2 means greater than all boxes-so arranged at last*/
+            /*remove align-content property for align self.*/
+            /*align-self:flex-start;/*it overrides align property of parent for this child.*/
+        }
+        
+
+    </style>
+
+
+</body>
+
+</html>

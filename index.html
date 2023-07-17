@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Practice</title>
+</head>
+<!-- In css we mostly use class,we give property to class & reuses this class. -->
+<!-- Shortcurts bgc=background color, bgs=bg size m0p0 = margin:0; padding:0;  -->
+
+<body>
+<fieldset class="fc1">This is first Box. <br> Box properties are applied to Box 2.</fieldset>
+<fieldset class="fc2">
+    <div id="did1" class="dc1">
+        <fieldset>
+            <p id="pid1" class="pc1">This is Box 2.</p>
+            <p id="pid2" class="pc2">Line 2</p>
+            <p id="pid3" class="pc3" style="background: #ee07db;">To demonstrate basic css properties.</p>
+        </fieldset>
+    <!-- this is called Inline style & it has most priority if inline style is their else overridied style is applied..-->
+    </div>
+    <fieldset><div class="dc2">New div to demonstrate Box sizing</div></fieldset>
+</fieldset>
+<fieldset class="fc3">
+    <span class="sc1" id="sid1">This is Box 3</span>
+    <span class="sc1" id="sid2">This is Span2</span>
+    <span class="sc1" id="sid3">This is Span3</span>
+    <br>
+    <!-- adding button for new pages -->
+    <a href="image.html" target="_blank"><input type="button" value="Image property" id="bid1"></a>
+    <a href="display&textProperties.html" target="_blank"><input type="button" value="Text & Display" id="bid2"></a>
+    <a href="size&positionProperties.html" target="_blank"><input type="button" value="Size,Position property" id="bid3"></a>
+    <a href="float.html" target="_blank"><input type="button" value="Float"id="bid4"></a>
+    <a href="flexProperty.html" target="_blank"><input type="button" value="Flex Box"id="bid5"></a>
+    <!-- <a href="image.html" target="_blank"><input type="button" value="Image property" id="bid1"></a> -->
+</fieldset>
+
+    <style> /* this is called internal style */ -->
+    /* in css we can directly access html var by #forid, .forclass */  
+        #pid1{ background: #1b08f4;}  /* background color of pid1 tag */
+        #pid2{background-color: #a0c3b4; color: rgb(132, 20, 119);}  /* color means text color */
+        #pid3{background: #56c918;} /* this doesn't works bcz priority of inline style is more. */
+        /* h1{} = element selector = this style applies to all h1 tags */
+        .sc1{background: #d8e0ad;   color: #52ed67;}    /* changes applies to this 3 span bcz have same class name. */
+        #sid3{background: #ea6274;} /* to chnage bg of span3 -use id att */
+    /* div#pid2{} ==>styling applies to element inside div tag which id is pid2. similarly div.pc1 */
+    /* body{ padding: 0;margin: 0;} */
+    </style> 
+
+    <!-- to create seperate js file in html - <script src="index.js"></script> 
+    This doesn't works : <style src="index.css"></style>-->
+    <link rel="stylesheet" href="box.css"><br> BOX MODEL
+    <!-- <style>body{background-color:blueviolet}</style> to make bg colored. -->
+</body>
+</html>

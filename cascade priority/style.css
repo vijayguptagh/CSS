@@ -1,0 +1,20 @@
+
+#i{
+    background-color: green;
+    /* margin: 50px; */
+    /* width: 500px; */
+}
+/* here overrided property bgc is applied from id selector and all different property from both are applied*/
+.c{
+    width: 200px; 
+    height: 150px; 
+    border: 2px solid rgb(2, 235, 244);
+    background-color: blue;
+}
+/* in case of selectors priority of property that is overrided id>attribute>class>element selector */
+/* div{
+    background-color: deeppink !important ;/* applied bcx imp keyword is used */
+    border: chartreuse solid 1px;/* not applied */
+    color:blue;
+} 
+ 
